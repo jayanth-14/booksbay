@@ -32,7 +32,7 @@ const createBookElements = () => {
   const year = document.createElement('h3');
   const genre = document.createElement('h3');
   addClass(book, title, author, year, genre, bookInfo, bookData);
-  const elements = [book, title, author, year, genre, bookInfo, bookData];
+  const elements = [book, title, year, genre, author, bookInfo, bookData];
   return elements;
 }
 //add data
@@ -67,10 +67,10 @@ const addBook = (event) => {
   const author = document.getElementById('authorInput')
   const year = document.getElementById('yearInput');
   const genre = document.getElementById('genreInput');
-  const bookValues = [title.value, author.value, year.value, genre.value];
+  const bookValues = [title.value, year.value, genre.value, author.value];
   appendBook(bookValues);
   clearInput(title, author, year, genre);
   event.preventDefault();
   toggleModal();
 };
-
+export default appendBook;
