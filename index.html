@@ -13,15 +13,15 @@
   <header>
     <h1 class="logo"><i class="fa-solid fa-book-open"></i>BooksBay</h1>
     <div class="actionBtns">
-      <button class="btn"><i class="fa-solid fa-plus"></i> Add Book</button>
+      <button class="btn" onclick="toggleModal()"><i class="fa-solid fa-plus"></i> Add Book</button>
     </div>
   </header>
   <!-- modal section -->
-   <section id="modal">
+   <section id="modal" class="hide">
     <form>
       <div class="modalHeader">
         <h1>Add Book</h1>
-        <i class="fa-solid fa-xmark"></i>
+        <i onclick="toggleModal()" class="fa-solid fa-xmark"></i>
       </div>
       <label for="titleInput">Enter Book Title :</label>
       <input type="text" name="" id="titleInput">
@@ -39,9 +39,9 @@
       <div class="book">
         <div class="title">The Lord Of Rings</div>
         <div class="bookInfo">
-          <h3 class="author"><span>Author : </span>jayanth</h3>
-          <h3 class="genre"><span>Genre : </span>fantasy</h3>
-          <h3 class="year"><span>Published year : </span>8888</h3>
+          <h3 class="author">jayanth</h3>
+          <h3 class="genre">fantasy</h3>
+          <h3 class="year">8888</h3>
         </div>
         <div class="bookData">
           <button class="btn green">Available</button>
@@ -51,63 +51,16 @@
       <div class="book">
         <div class="title">The Lord Of Rings</div>
         <div class="bookInfo">
-          <h3 class="author"><span>Author : </span>jayanth</h3>
-          <h3 class="genre"><span>Genre : </span>fantasy</h3>
-          <h3 class="year"><span>Published year : </span>8888</h3>
+          <h3 class="author">jayanth</h3>
+          <h3 class="genre">fantasy</h3>
+          <h3 class="year">8888</h3>
         </div>
         <div class="bookData">
           <button class="btn green">Available</button>
         <button class="btn"><i class="fa-solid fa-minus"></i> Lend Book</button>
         </div>
       </div>
-      <div class="book">
-        <div class="title">The Lord Of Rings</div>
-        <div class="bookInfo">
-          <h3 class="author"><span>Author : </span>jayanth</h3>
-          <h3 class="genre"><span>Genre : </span>fantasy</h3>
-          <h3 class="year"><span>Published year : </span>8888</h3>
-        </div>
-        <div class="bookData">
-          <button class="btn green">Available</button>
-        <button class="btn"><i class="fa-solid fa-minus"></i> Lend Book</button>
-        </div>
-      </div>
-      <div class="book">
-        <div class="title">The Lord Of Rings</div>
-        <div class="bookInfo">
-          <h3 class="author"><span>Author : </span>jayanth</h3>
-          <h3 class="genre"><span>Genre : </span>fantasy</h3>
-          <h3 class="year"><span>Published year : </span>8888</h3>
-        </div>
-        <div class="bookData">
-          <button class="btn green">Available</button>
-        <button class="btn"><i class="fa-solid fa-minus"></i> Lend Book</button>
-        </div>
-      </div>
-      <div class="book">
-        <div class="title">The Lord Of Rings</div>
-        <div class="bookInfo">
-          <h3 class="author"><span>Author : </span>jayanth</h3>
-          <h3 class="genre"><span>Genre : </span>fantasy</h3>
-          <h3 class="year"><span>Published year : </span>8888</h3>
-        </div>
-        <div class="bookData">
-          <button class="btn green">Available</button>
-        <button class="btn"><i class="fa-solid fa-minus"></i> Lend Book</button>
-        </div>
-      </div>
-      <div class="book">
-        <div class="title">The Lord Of Rings</div>
-        <div class="bookInfo">
-          <h3 class="author"><span>Author : </span>jayanth</h3>
-          <h3 class="genre"><span>Genre : </span>fantasy</h3>
-          <h3 class="year"><span>Published year : </span>8888</h3>
-        </div>
-        <div class="bookData">
-          <button class="btn red">Available</button>
-        <button class="btn"><i class="fa-solid fa-minus"></i> Lend Book</button>
-        </div>
-      </div>
+      
     </section>
 </body>
 </html>

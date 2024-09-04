@@ -29,13 +29,15 @@ header .logo {
   cursor: pointer;
 }
 /* modal styles */
+.hide {
+  display: none !important;
+}
 #modal {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
-  display: none;
 }
 #modal form {
   background-color: #fff;
@@ -104,7 +106,16 @@ header .logo {
   font-size: 14px;
   font-weight: 600;
 }
-.book .bookInfo h3 span {
+.book .bookInfo .author::before {
+  content: "Author : ";
+  font-weight: 700;
+}
+.book .bookInfo .genre::before {
+  content: "Genre : ";
+  font-weight: 700;
+}
+.book .bookInfo .year::before {
+  content: "Published year : ";
   font-weight: 700;
 }
 .book .bookData {
