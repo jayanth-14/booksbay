@@ -1,3 +1,16 @@
+//clear input fields
+const clearInput = (title, author, year, genre) => {
+  title.value = '';
+  author.value = '';
+  year.value = '';
+  genre.value = '';
+};
+// to toggle modal
+const toggleModal = () => {
+  document.getElementById('modal').classList.toggle('hide');
+  const form = document.querySelector('#modal form');
+  form.addEventListener('submit', addBook);
+};
 //add classes
 const addClass = (book, title, author, year, genre, bookInfo, bookData) => {
   book.classList.add('book');
@@ -50,18 +63,14 @@ const appendBook = (bookValues) => {
 
 // add books
 const addBook = (event) => {
-  const titleValue = document.getElementById('titleInput').value;
-  const authorValue = document.getElementById('authorInput').value;
-  const yearValue = document.getElementById('yearInput').value;
-  const genreValue = document.getElementById('genreInput').value;
-  const bookValues = [titleValue, authorValue, yearValue, genreValue];
+  const title = document.getElementById('titleInput');
+  const author = document.getElementById('authorInput')
+  const year = document.getElementById('yearInput');
+  const genre = document.getElementById('genreInput');
+  const bookValues = [title.value, author.value, year.value, genre.value];
   appendBook(bookValues);
+  clearInput(title, author, year, genre);
   event.preventDefault();
+  toggleModal();
 };
 
-// to toggle modal
-const toggleModal = () => {
-  document.getElementById('modal').classList.toggle('hide');
-  const form = document.querySelector('#modal form');
-  form.addEventListener('submit', addBook);
-};
