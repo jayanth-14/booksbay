@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header styles */
+header {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebf2fa;
+}
+header .logo {
+  font-size: 1.9rem;
+  color: #064789;
+}
+.btn {
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #064789;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  background-color: #427aa1;
+}
