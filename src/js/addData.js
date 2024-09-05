@@ -1,19 +1,16 @@
-import dataArray from "./bookData.js";
+import bookData from "./bookData.js";
 import appendBook from "./books.js";
 const addData = () => {
   let count = 0;
   let subArray = [];
-  for (let index in dataArray) {
-    if (count <= 3) {
-      subArray.push(dataArray[index]);
-      count = count + 1;
-    } else {
-      count = 0;
-      appendBook(subArray);
-      subArray = [];
-      subArray.push(dataArray[index]);
-    }
-  }
-  appendBook(subArray);
+  let rows = bookData.split('\n');
+  rows.shift();
+  // for (let index in dataArray) {
+    
+  // }
+  rows.forEach ((row) => {
+    const column = row.split(',');
+    appendBook(column);
+  });
 };
 window.onload = addData;

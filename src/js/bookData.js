@@ -205,7 +205,7 @@ The Wheel of Time: The Great Hunt,1990,Fantasy,Robert Jordan
 The Wheel of Time: The Dragon Reborn,1991,Fantasy,Robert Jordan
 The Wheel of Time: The Shadow Rising,1992,Fantasy,Robert Jordan`;
 
-let dataArray = bookData.split(/,|\n/);
-dataArray.splice(0,4);
-console.log(dataArray);
-export default dataArray;
+// let dataArray = bookData.split(/,|\n/);
+// dataArray.splice(0,4);
+// console.log(dataArray);
+export default bookData;
